@@ -131,6 +131,7 @@ int main() {
 
       int escolhaJogador1, escolhaJogador2; // Menu do Jogo
       int resultado1, resultado2;
+      float valor1a, valor1b, valor2a, valor2b;
 
         printf("  -- Jogo Super Trunfo --  \n");
         printf("Escolha o primeiro atributo para a comparação: \n");  // escolha do primeiro atributo para a comparação //
@@ -175,7 +176,9 @@ int main() {
             break;
       }
 
-        printf("Escolha o segundo atributo para a comparação: \n");  // escolha do segundo atributo para a comparação //
+                    // escolha do segundo atributo para a comparação //
+
+        printf("Escolha o segundo atributo para a comparação: \n");
         printf("1. População \n");
         printf("2. Área \n");
         printf("3. PIB \n");
@@ -218,6 +221,61 @@ int main() {
             break;
             }
         }
+
+                        // resultado da comparação do primeiro atributo
+
+            printf(" ===== Resultado da Comparação =====\n");
+
+            printf("\n");
+
+            printf("  %s  --  %s\n", cidade1, cidade2);
+
+        switch (escolhaJogador1){
+        case 1:
+            printf("  Atributo 1 -- População: %d (Carta 1)  vs  %d (Carta 2) \n", populacao1, populacao2);
+            break;
+        case 2:
+            printf("  Atributo 1 -- Área: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", area1, area2);
+            break;
+        case 3:
+            printf("  Atributo 1 -- PIB: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", pib1, pib2);
+            break;
+        case 4:
+            printf("  Atributo 1 -- Pontos Turísticos: %d (Carta 1)  vs  %d (Carta 2) \n", pontosTuristicos1, pontosTuristicos2);
+            break;
+        case 5:
+            printf("  Atributo 1 -- Densidade Demográfica: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", densidade1, densidade2);
+            break;
+        case 6:
+            printf("  Atributo 1 -- PIB Per Capita: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", pibPerCapita1, pibPerCapita2);
+            break;
+        }
+
+                            // resultado da comparação do segundo atributo
+
+        switch (escolhaJogador2){
+        case 1:
+            printf("  Atributo 2 -- População: %d (Carta 1)  vs  %d (Carta 2) \n", populacao1, populacao2);
+            break;
+        case 2:
+            printf("  Atributo 2 -- Área: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", area1, area2);
+            break;
+        case 3:
+            printf("  Atributo 2 -- PIB: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", pib1, pib2);
+            break;
+        case 4:
+            printf("  Atributo 2 -- Pontos Turísticos: %d (Carta 1)  vs  %d (Carta 2) \n", pontosTuristicos1, pontosTuristicos2);
+            break;
+        case 5:
+            printf("  Atributo 2 -- Densidade Demográfica: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", densidade1, densidade2);
+            break;
+        case 6:
+            printf("  Atributo 2 -- PIB Per Capita: %.2f (Carta 1)  vs  %.2f (Carta 2) \n", pibPerCapita1, pibPerCapita2);
+            break;
+        }
+
+                            // soma dos atributos de cada carta
+
 
     return 0;
 }
